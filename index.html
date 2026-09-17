@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tulasi Lakshmi Narasimha Raya — Data Science Portfolio</title>
+<meta name="description" content="Data Science & Full-Stack portfolio of Tulasi Lakshmi Narasimha Raya — ML models, dashboards, and full-stack builds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="bg-net" aria-hidden="true"></canvas>
+<div class="grid-overlay" aria-hidden="true"></div>
+<div class="progress-rail" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top"><span class="brand-glyph">&gt;_</span> Tulasi Lakshmi Narasimha Raya</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="links" id="navLinks">
+      <a href="#work"><span class="idx">01</span>work</a>
+      <a href="#experience"><span class="idx">02</span>log</a>
+      <a href="#skills"><span class="idx">03</span>stack</a>
+      <a href="#credentials"><span class="idx">04</span>proof</a>
+      <a href="#contact"><span class="idx">05</span>contact</a>
+    </nav>
+    <a class="nav-cta" href="mailto:tulasilakshminarashima@gmail.com">say hello →</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="border-top:none;">
+    <div class="wrap hero-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> open to data analyst / data scientist / SDE roles</p>
+        <h1 class="headline">I turn messy data<br>into models that<br><span class="rotator-wrap">predict <span id="rotator" class="rotator">house prices</span></span></h1>
+        <p class="hero-sub">B.Tech Computer Science &amp; Engineering (Data Science) student, final year — building predictive models, interactive dashboards, and full-stack ML apps. From a coffee-quality scoring engine to an AI-backed real estate platform.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">See the models →</a>
+          <a class="btn btn-ghost" href="mailto:tulasilakshminarashima@gmail.com">tulasilakshminarashima@gmail.com</a>
+        </div>
+        <div class="stat-strip">
+          <div class="stat"><div class="num" data-count="0.821" data-decimals="3">0</div><div class="lbl">best model R²</div></div>
+          <div class="stat"><div class="num" data-count="1303">0</div><div class="lbl">listings modeled</div></div>
+          <div class="stat"><div class="num" data-count="207">0</div><div class="lbl">samples cupped &amp; scored</div></div>
+          <div class="stat"><div class="num" data-count="8">0</div><div class="lbl">public repos</div></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="model-card">
+          <div class="model-card-head">
+            <span class="model-dot"></span><span class="model-dot"></span><span class="model-dot"></span>
+            <span class="model-title">fit_model.py — live</span>
+          </div>
+          <canvas id="fitCanvas" width="520" height="360"></canvas>
+          <div class="model-readout">
+            <div><span class="ro-label">epoch</span><span class="ro-value" id="roEpoch">000</span></div>
+            <div><span class="ro-label">loss</span><span class="ro-value" id="roLoss">—</span></div>
+            <div><span class="ro-label">r²</span><span class="ro-value" id="roR2">—</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT + SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-num">01</span>
+          <h2 class="section-title">Profile &amp; capabilities</h2>
+        </div>
+        <p class="section-note">Skills scored the same way I score coffee samples: on evidence, not vibes.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p><strong>I'm Tulasi Lakshmi Narasimha Raya</strong>, a final-year Data Science engineering student who likes problems that end in a number you can defend. My work spans <strong>predictive modeling</strong>, <strong>BI dashboards</strong>, and <strong>full-stack apps</strong> — usually all three in the same project.</p>
+          <p>Recent internships took me through AWS-flavored data engineering, applied ML with OdinSchool, and a generative AI &amp; LLM track — on top of hands-on projects covering everything from coffee cupping data to laptop pricing to real estate analytics.</p>
+          <p>Currently looking for an entry-level <strong>Data Analyst / Data Scientist / Software Developer</strong> role where I can turn messy datasets into decisions people actually use.</p>
+
+          <div class="marquee-wrap" aria-hidden="true">
+            <div class="marquee-track">
+              <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Pandas</span><span class="chip">Scikit-learn</span><span class="chip">XGBoost</span><span class="chip">Power BI</span><span class="chip">React.js</span><span class="chip">FastAPI</span><span class="chip">Streamlit</span><span class="chip">Git</span>
+              <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Pandas</span><span class="chip">Scikit-learn</span><span class="chip">XGBoost</span><span class="chip">Power BI</span><span class="chip">React.js</span><span class="chip">FastAPI</span><span class="chip">Streamlit</span><span class="chip">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-num">02</span>
+          <h2 class="section-title">Commit log</h2>
+        </div>
+      </div>
+
+      <div class="gitlog reveal">
+        <div class="gitline" aria-hidden="true"></div>
+
+        <div class="git-item">
+          <span class="git-dot"></span>
+          <div class="git-body">
+            <div class="git-top"><span class="git-hash">#a91f3c</span><span class="git-date">Apr – Jun 2026</span></div>
+            <h4>Generative AI, Deep Learning &amp; Language Models — Virtual Internship</h4>
+            <p class="git-org">AICTE-EduSkills Academy</p>
+            <p class="git-desc">8-week program covering generative AI, deep learning fundamentals, and applied language-model workflows.</p>
+          </div>
+        </div>
+
+        <div class="git-item">
+          <span class="git-dot"></span>
+          <div class="git-body">
+            <div class="git-top"><span class="git-hash">#6bd21e</span><span class="git-date">Oct – Dec 2025</span></div>
+            <h4>Data Science Master — Virtual Internship</h4>
+            <p class="git-org">AICTE-EduSkills, supported by Altair</p>
+            <p class="git-desc">10-week program covering data science fundamentals, model building, and applied ML workflows.</p>
+          </div>
+        </div>
+
+        <div class="git-item">
+          <span class="git-dot"></span>
+          <div class="git-body">
+            <div class="git-top"><span class="git-hash">#4f08aa</span><span class="git-date">Apr – Oct 2025</span></div>
+            <h4>Data Science Professional Intern</h4>
+            <p class="git-org">OdinSchool</p>
+            <p class="git-desc">Hands-on work in data cleaning, exploratory analysis, and dashboard reporting using Python, Power BI, SQL, and Scikit-learn — plus preprocessing, model building, and hyperparameter tuning.</p>
+          </div>
+        </div>
+
+        <div class="git-item">
+          <span class="git-dot"></span>
+          <div class="git-body">
+            <div class="git-top"><span class="git-hash">#1c773e</span><span class="git-date">Jan – Mar 2025</span></div>
+            <h4>Data Engineering — Virtual Internship</h4>
+            <p class="git-org">AICTE-EduSkills, curriculum by AWS Academy</p>
+            <p class="git-desc">10-week internship on data engineering concepts and cloud-based data pipelines using AWS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-num">03</span>
+          <h2 class="section-title">Selected work</h2>
+        </div>
+      </div>
+
+      <div class="filter-row reveal" id="filterRow">
+        <button class="filter-btn active" data-filter="all">all</button>
+        <button class="filter-btn" data-filter="ml">machine learning</button>
+        <button class="filter-btn" data-filter="fullstack">full-stack</button>
+        <button class="filter-btn" data-filter="viz">data viz</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <article class="project-card featured tilt" data-tags="ml fullstack">
+          <div class="project-card-top">
+            <div>
+              <div class="project-pills"><span>Full-Stack</span><span>ML</span><span>Analytics</span></div>
+              <h3>IntelliEstate</h3>
+              <p class="project-summary">AI-backed real estate decision support with property discovery, role-based dashboards, pricing forecasts, and explainable market analytics.</p>
+            </div>
+            <div class="project-card-actions">
+              <a class="btn btn-secondary" href="https://github.com/TulasiRaya/IntelliEstate" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <ul class="project-features">
+            <li>Built React + Tailwind frontend with FastAPI backend for search, dashboards, analytics, and role-based access.</li>
+            <li>Implemented ML pricing, demand, ROI, and recommendation endpoints using XGBoost and SHAP.</li>
+            <li>Designed a SQLAlchemy schema for buyers, agents, developers, and admin users with JWT authentication.</li>
+            <li>Delivered secure Swagger API documentation for client integration and analytics workflows.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="ledger">
+              <div><div class="lnum">+10</div><div class="llbl">API endpoints</div></div>
+              <div><div class="lnum">3</div><div class="llbl">user roles</div></div>
+              <div><div class="lnum">XGBoost</div><div class="llbl">explainability</div></div>
+            </div>
+            <div class="stack-row">
+              <span>Python</span><span>FastAPI</span><span>React</span><span>Tailwind</span><span>SQLAlchemy</span><span>MySQL</span><span>XGBoost</span><span>SHAP</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card featured tilt" data-tags="viz">
+          <div class="project-card-top">
+            <div>
+              <div class="project-pills"><span>Power BI</span><span>Data Story</span><span>Insights</span></div>
+              <h3>Coffee Quality Analysis</h3>
+              <p class="project-summary">Interactive Power BI report for specialty coffee quality, defect analysis, and sensory score benchmarking across 207 lots.</p>
+            </div>
+            <div class="project-card-actions">
+              <a class="btn btn-secondary" href="https://github.com/TulasiRaya/Coffee-Quality-Analysis-" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <ul class="project-features">
+            <li>Built a 5-page dashboard with cross-filtering, KPIs, treemaps, combo charts, and scatter analysis.</li>
+            <li>Modeled 31 attributes to reveal how flavor, aftertaste, and balance drive Total Cup Points.</li>
+            <li>Highlighted the impact of defects and Quaker beans on quality and roast performance.</li>
+            <li>Standardized dataset categories for reliable exploration and stakeholder reporting.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="ledger">
+              <div><div class="lnum">207</div><div class="llbl">arabica lots</div></div>
+              <div><div class="lnum">5</div><div class="llbl">dashboard pages</div></div>
+              <div><div class="lnum">31</div><div class="llbl">attributes</div></div>
+            </div>
+            <div class="stack-row">
+              <span>Power BI</span><span>DAX</span><span>Data Modeling</span><span>Excel</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card tilt" data-tags="ml">
+          <div class="project-card-top">
+            <div>
+              <div class="project-pills"><span>ML</span><span>Regression</span><span>Prediction</span></div>
+              <h3>LaptopPriceIQ</h3>
+              <p class="project-summary">Price prediction engine for laptops with robust feature engineering, model selection, and reproducible inference workflows.</p>
+            </div>
+            <div class="project-card-actions">
+              <a class="btn btn-secondary" href="https://github.com/TulasiRaya/Laptop-Price-Prediction" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <ul class="project-features">
+            <li>Processed 1,303 listings and engineered features from ScreenResolution, CPU, Memory, GPU, and display specs.</li>
+            <li>Used sklearn ColumnTransformer to preserve modeling integrity with scaling and encoding pipelines.</li>
+            <li>Benchmarked five regressors and chose Gradient Boosting for the best R² performance.</li>
+            <li>Packaged the workflow in a reproducible notebook with model persistence and batch inference support.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="ledger">
+              <div><div class="lnum">1,303</div><div class="llbl">listings</div></div>
+              <div><div class="lnum">17</div><div class="llbl">features</div></div>
+              <div><div class="lnum">0.821</div><div class="llbl">R² score</div></div>
+            </div>
+            <div class="stack-row">
+              <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>GridSearchCV</span><span>Notebook</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card tilt" data-tags="ml fullstack">
+          <div class="project-card-top">
+            <div>
+              <div class="project-pills"><span>Streamlit</span><span>Agriculture</span><span>Recommendation</span></div>
+              <h3>Smart Crop Recommendation</h3>
+              <p class="project-summary">Interactive crop recommendation tool that maps soil and agronomic inputs to optimal crop selection and compatibility scoring.</p>
+            </div>
+            <div class="project-card-actions">
+              <a class="btn btn-secondary" href="https://github.com/TulasiRaya/Smart_Crop_App" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-primary" href="https://smart-crop-app-p61t.onrender.com" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </div>
+          <ul class="project-features">
+            <li>Streamlit interface for soil, climate, and crop input collection.</li>
+            <li>Ensemble recommendation engine returns high-accuracy crop suggestions for farmers.</li>
+            <li>Supports live analytics pages for compatibility and performance insights.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="stack-row">
+              <span>Python</span><span>Streamlit</span><span>Modeling</span><span>Deployment</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card tilt" data-tags="ml fullstack">
+          <div class="project-card-top">
+            <div>
+              <div class="project-pills"><span>Streamlit</span><span>Regression</span><span>Real Estate</span></div>
+              <h3>House Price Prediction</h3>
+              <p class="project-summary">California housing model estimating median home value with a serialized pipeline and scalable Streamlit delivery.</p>
+            </div>
+            <div class="project-card-actions">
+              <a class="btn btn-secondary" href="https://github.com/TulasiRaya/house-price-prediction" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-primary" href="https://house-price-prediction-glhv.onrender.com" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </div>
+          <ul class="project-features">
+            <li>Streamlit dashboard for house feature input and instant price output.</li>
+            <li>Uses linear regression with MinMaxScaler preprocessing for robust prediction.</li>
+            <li>Focuses on home, neighborhood, and demographic features from California market data.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="stack-row">
+              <span>Python</span><span>Streamlit</span><span>Scikit-learn</span><span>Data Prep</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card tilt" data-tags="ml">
+          <div class="project-card-top">
+            <div>
+              <div class="project-pills"><span>Text</span><span>Sentiment</span><span>Analysis</span></div>
+              <h3>Sentiment Analysis</h3>
+              <p class="project-summary">Python notebook for sentiment classification and text analytics with preprocessing, feature extraction, and model evaluation.</p>
+            </div>
+            <div class="project-card-actions">
+              <a class="btn btn-secondary" href="https://github.com/TulasiRaya/Sentiment_Analysis_" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-primary" href="https://sentilens-by-tln.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </div>
+          <ul class="project-features">
+            <li>Built a sentiment classification workflow with text cleaning, tokenization, and feature engineering.</li>
+            <li>Evaluated model performance with accuracy and visualization of sentiment distributions.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="stack-row">
+              <span>Python</span><span>NLP</span><span>Pandas</span><span>Machine Learning</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card tilt" data-tags="ml fullstack">
+          <div class="project-card-top">
+            <div>
+              <div class="project-pills"><span>Healthcare</span><span>App</span><span>Python</span></div>
+              <h3>Medisense App</h3>
+              <p class="project-summary">Healthcare-focused Python application delivering patient insights, symptom tracking, and predictive support features.</p>
+            </div>
+            <div class="project-card-actions">
+              <a class="btn btn-secondary" href="https://github.com/TulasiRaya/Medisense_app" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-primary" href="https://medisenseapp.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </div>
+          <ul class="project-features">
+            <li>Developed a Python app for health data capture, patient symptom analysis, and care insights.</li>
+            <li>Included visualization and predictive logic to support data-driven healthcare decisions.</li>
+          </ul>
+          <div class="project-footer">
+            <div class="stack-row">
+              <span>Python</span><span>Data Visualization</span><span>Health</span><span>App</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section id="credentials">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-num">04</span>
+          <h2 class="section-title">Certifications &amp; hackathons</h2>
+        </div>
+        <p class="section-note">Formal training, plus a few sprints under a countdown clock.</p>
+      </div>
+
+      <div class="badge-grid reveal">
+        <div class="badge"><span class="mark">01</span><div><h4>Data Science Professional Certificate</h4><p>OdinSchool</p></div></div>
+        <div class="badge"><span class="mark">02</span><div><h4>Generative AI, Deep Learning &amp; Language Models</h4><p>EduSkills Academy</p></div></div>
+        <div class="badge"><span class="mark">03</span><div><h4>AWS Academy Data Engineering</h4><p>AWS Academy Graduate</p></div></div>
+        <div class="badge"><span class="mark">04</span><div><h4>Google AI Essentials</h4><p>Coursera</p></div></div>
+        <div class="badge"><span class="mark">05</span><div><h4>Data Science Master Certificate</h4><p>Altair</p></div></div>
+        <div class="badge"><span class="mark">06</span><div><h4>Oracle Certified Foundations Associate</h4><p>Agentic AI Certified Foundations Associate — Oracle University</p></div></div>
+        <div class="badge"><span class="mark">07</span><div><h4>Google Developer Groups Hackathon 2025 &amp; 2026</h4><p>Team-based development sprints — built functional MVPs under strict deadlines</p></div></div>
+        <div class="badge"><span class="mark">08</span><div><h4>Smart India Hackathon 2025 — College Level</h4><p>Shortlisted; contributed to a solution aligned with a national problem statement</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-num">05</span>
+          <h2 class="section-title">Studying</h2>
+        </div>
+      </div>
+      <div class="edu-row reveal">
+        <div>
+          <div class="edu-degree">B.Tech, Computer Science Engineering — Data Science</div>
+          <div class="edu-school">Narayana Engineering College, Nellore</div>
+        </div>
+        <div class="edu-date">2023 – 2027</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap contact">
+      <p class="eyebrow" style="justify-content:center;"><span class="dot"></span> let's talk</p>
+      <h2 class="reveal">Have a role, a dataset, or an idea worth testing?</h2>
+      <p class="reveal">I'm open to entry-level Data Analyst, Data Scientist, and Software Developer roles — and happy to walk through any project above in more depth.</p>
+
+      <div class="terminal reveal" aria-hidden="true">
+        <div class="model-card-head">
+          <span class="model-dot"></span><span class="model-dot"></span><span class="model-dot"></span>
+          <span class="model-title">status.sh</span>
+        </div>
+        <div class="term-body" id="termBody"></div>
+      </div>
+
+      <div class="contact-links reveal">
+        <a class="btn btn-primary" href="mailto:tulasilakshminarashima@gmail.com">tulasilakshminarashima@gmail.com</a>
+        <a class="btn btn-ghost" href="tel:+919391643613">+91 93916 43613</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/tulasilakshminarasimha-raya/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn btn-ghost" href="https://github.com/TulasiRaya" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>© 2026 Tulasi Lakshmi Narasimha Raya. Built with HTML, CSS &amp; JS.</p>
+    <a class="back-top" href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
